@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@theme {
+	--font-sans: 'Geist', ui-sans-serif, system-ui, sans-serif;
+	--font-mono: 'Geist Mono', ui-monospace, monospace;
+	--font-serif: 'Instrument Serif', ui-serif, Georgia, serif;
+
+	--color-paper: #ffffff;
+	--color-ink: #0a0a0a;
+	--color-muted: #777777;
+	--color-faint: #b0ada1;
+	--color-line: #ebe9e0;
+	--color-terminal: #0a0a0a;
+	--color-terminal-accent: #7fd7a5;
+}
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		background: var(--color-paper);
+		color: var(--color-ink);
+		font-family: var(--font-sans);
+		-webkit-font-smoothing: antialiased;
+	}
+}
