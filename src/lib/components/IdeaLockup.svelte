@@ -3,7 +3,7 @@
 
 	let idea = $state('');
 
-	const placeholder = 'Tell me your business idea';
+	const placeholder = "What's your business idea?";
 
 	function submit(event: SubmitEvent) {
 		event.preventDefault();
@@ -45,7 +45,7 @@
 			type="submit"
 			class="cursor-pointer rounded-md bg-white px-3 py-1.5 font-sans text-[12px] font-medium text-(--color-ink) transition-opacity hover:opacity-90"
 		>
-			Start →
+			Start for Free →
 		</button>
 	</form>
 </div>

@@ -26,11 +26,11 @@
 		<IdeaLockup />
 
 		<p class="mt-4 text-center font-mono text-[11px] tracking-[0.03em] text-(--color-muted)">
-			$1 today to reserve · $49/mo when access opens · cancel anytime
+			4,598 business launched
 		</p>
 
 		<div
-			class="mt-8 space-y-3 text-left font-sans text-[13px] leading-[1.65] text-(--color-muted)"
+			class="mt-8 space-y-3 text-left font-sans text-[15px] leading-[1.65] text-(--color-muted)"
 		>
 			<p>
 				You're meant to <span class="border-b border-(--color-muted)">own</span> something. Whether
