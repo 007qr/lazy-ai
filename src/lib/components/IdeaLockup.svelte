@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import LiveTicker from './LiveTicker.svelte';
 
 	let idea = $state('');
@@ -7,10 +8,9 @@
 
 	function submit(event: SubmitEvent) {
 		event.preventDefault();
+		// Hand off to the start flow, carrying the idea along if present.
 		const trimmed = idea.trim();
-		if (!trimmed) return;
-		// Hand off to the reservation flow.
-		console.log('Launching:', trimmed);
+		goto(trimmed ? `/start?idea=${encodeURIComponent(trimmed)}` : '/start');
 	}
 </script>
 
